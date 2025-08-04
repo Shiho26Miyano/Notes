@@ -1,0 +1,14 @@
+app/
+├── main.py                    # ← FastAPI (web framework)
+├── core/
+│   ├── dependencies.py        # ← FastAPI (dependency injection)
+│   ├── config.py             # ← Regular Python (settings)
+│   └── middleware.py         # ← FastAPI (middleware)
+├── services/
+│   ├── ai_service.py         # ← Regular Python async (business logic)
+│   ├── stock_service.py      # ← Regular Python async (business logic)
+│   ├── cache_service.py      # ← Regular Python async (business logic)
+│   └── usage_service.py      # ← Regular Python async (business logic)
+└── api/                      # ← FastAPI (if exists)
+    └── v1/
+        └── endpoints/        # ← FastAPI (route handlers)
